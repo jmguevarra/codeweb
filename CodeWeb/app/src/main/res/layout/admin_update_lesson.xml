@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_add_lesson"
+    android:layout_width="match_parent"
+    android:background="@color/textColor"
+    android:layout_height="match_parent"
+    tools:context="com.app.codeweb.codeweb.Admin_Activity.AdminActions.ActionsCom.AddLesson">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        android:paddingTop="3dp"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Info"
+                android:textSize="22sp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_course"
+                android:layout_marginTop="5dp"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_marginBottom="8dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sp_category"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title of Lesson"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:hint="e.g The HTML"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Content"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:hint="e.g Html is HyperText..."
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample Codes"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:textColor="@color/hintcolor"
+                    android:hint="Enter your sample codes Here"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_code_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_height="200dp"
+                android:id="@+id/iv_output"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Trivia"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:hint="e.g Did you Know that.."
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_trivia" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_rect"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:layout_marginBottom="20dp"
+                android:onClick="saveLesson"
+                android:id="@+id/btn_lesson"
+                android:layout_marginTop="15dp"
+                android:text="Save Lesson"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

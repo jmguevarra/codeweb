@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/textColor"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/wSignStudId">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:hint="School ID"
+                    android:textColor="#434346"
+                    android:ems="10"
+                    android:id="@+id/signStudId"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent"
+                android:layout_marginTop="3dp"
+                android:id="@+id/wSignUsername"
+                android:layout_below="@+id/wSignStudId">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Username"
+                    android:textColor="#434346"
+                    android:ems="10"
+                    android:id="@+id/signUsername"
+                    android:layout_marginTop="1dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent"
+                android:layout_marginTop="3dp"
+                android:id="@+id/wSignPassword"
+                android:layout_below="@+id/wSignUsername">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:textColor="#434346"
+                    android:ems="10"
+                    android:id="@+id/signPassword"
+                    android:layout_marginTop="1dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent"
+                android:layout_marginTop="3dp"
+                android:id="@+id/wSignName"
+                android:layout_below="@+id/wSignPassword">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Full Name"
+                    android:textColor="#434346"
+                    android:ems="10"
+                    android:id="@+id/signName"
+                    android:layout_marginTop="1dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent"
+                android:layout_marginTop="3dp"
+                android:id="@+id/wSignSection"
+                android:layout_below="@+id/wSignName">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Course and Section"
+                    android:textColor="#434346"
+                    android:ems="10"
+                    android:id="@+id/signSection"
+                    android:layout_marginTop="1dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:text="Sign-Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signBtnSignUp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/wSignSection"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

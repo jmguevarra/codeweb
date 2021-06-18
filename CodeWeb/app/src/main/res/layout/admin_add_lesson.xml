@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_add_lesson"
+    android:layout_width="match_parent"
+    android:background="@color/textColor"
+    android:layout_height="match_parent"
+    tools:context="com.app.codeweb.codeweb.Admin_Activity.AdminActions.ActionsCom.AddLesson">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        android:paddingTop="3dp"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Info"
+                android:textSize="22sp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_course"
+                android:layout_marginTop="5dp"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_marginBottom="8dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sp_category"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title of Lesson"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:hint="e.g The HTML"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Content"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:hint="e.g Html is HyperText..."
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample Codes"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:textColor="@color/hintcolor"
+                    android:hint="Enter your sample codes Here"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_code_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_height="200dp"
+                android:id="@+id/iv_output"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Trivia"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="25dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_rect_white"
+                    android:hint="e.g Did you Know that.."
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/et_trivia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question Info"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:text="Question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:ems="10"
+                    android:hint="Add you Question Here"
+                    android:drawablePadding="16dp"
+                    android:drawableLeft="@drawable/ic_question"
+                    android:textColorHint="@color/hintcolor"
+                    android:id="@+id/et_quiz_question" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="Options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:drawableLeft="@drawable/ic_opt1"
+                    android:drawablePadding="16dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:ems="10"
+                    android:hint="First Option"
+                    android:textColorHint="@color/colorPrimary"
+                    android:id="@+id/et_quiz_opta" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:drawableLeft="@drawable/ic_opt2"
+                    android:drawablePadding="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:ems="10"
+                    android:hint="2nd Option"
+                    android:textColorHint="@color/colorPrimary"
+                    android:id="@+id/et_quiz_optb" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:drawableLeft="@drawable/ic_opt3"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:drawablePadding="16dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingRight="5dp"
+                    android:ems="10"
+                    android:hint="3rd Option"
+                    android:textColorHint="@color/colorPrimary"
+                    android:id="@+id/et_quiz_optc" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width ="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hintcolor"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:drawableLeft="@drawable/ic_opt4"
+                    android:drawablePadding="16dp"
+                    android:paddingRight="5dp"
+                    android:ems="10"
+                    android:hint="4th Option"
+                    android:textColorHint="@color/colorPrimary"
+                    android:id="@+id/et_quiz_optd" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="Pick Correct Answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_ans"
+                style="@style/Base.Animation.AppCompat.DropDownUp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_rect"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:layout_marginBottom="15dp"
+                android:onClick="saveLesson"
+                android:id="@+id/btn_lesson"
+                android:layout_marginTop="10dp"
+                android:text="Save Lesson"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

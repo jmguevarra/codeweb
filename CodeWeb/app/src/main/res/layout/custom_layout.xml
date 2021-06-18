@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageview"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Lesson 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questiontext"
+        android:layout_alignBottom="@+id/imageview"
+        android:layout_alignStart="@+id/imageview"
+        android:layout_alignEnd="@+id/imageview"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/textColor"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="4/4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numbertext"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/imageview"
+        android:layout_alignEnd="@+id/imageview" />
+    <TextView
+        android:text="Title Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lessontext"
+        android:textSize="20sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/numbertext"
+        android:layout_alignStart="@+id/imageview"
+        android:layout_alignEnd="@+id/numbertext"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#000"
+        android:alpha="0.4"
+        android:visibility="invisible"
+        android:id="@+id/tvlock"/>
+
+</RelativeLayout>

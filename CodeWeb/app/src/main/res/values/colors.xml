@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#59b4d9</color>
+    <color name="colorPrimaryDark">#59b9</color>
+    <color name="colorAccent">#59b4d9</color>
+    <color name="colorPrimaryLight">#696969</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="hintcolor">#434346</color>
+
+
+    <color name="blue_200">#FF90CAF9</color>
+    <color name="blue_500">#FF2196F3</color>
+    <color name="blue_700">#FF1976D2</color>
+
+    <color name="red_200">#FFFF6E60</color>
+    <color name="red_500">#FFFF3C40</color>
+    <color name="red_700">#FFFF1F10</color>
+
+    <color name="green_200">#FF00EE00</color>
+    <color name="green_500">#FF008800</color>
+    <color name="green_700">#FF005500</color>
+
+    <color name="orange_1">#ffad85</color>
+    <color name="orange_2">#f68046</color>
+    <color name="orange_3">#e94f05</color>
+
+    <color name="gray_1">#000000</color>
+    <color name="gray_2">#232222</color>
+    <color name="gray_3">#383736</color>
+    <color name="gray_4">#454444</color>
+    <color name="gray_5">#555453</color>
+    <color name="gray_6">#686766</color>
+    <color name="gray_7">#807f7e</color>
+
+    <color name="blue_1">#d0d9f6</color>
+    <color name="blue_2">#abbdfa</color>
+    <color name="blue_3">#90a9fb</color>
+    <color name="blue_4">#7192fd</color>
+    <color name="blue_5">#587ffc</color>
+    <color name="blue_6">#3c69fd</color>
+    <color name="blue_7">#003cff</color>
+
+
+
+
+
+
+</resources>

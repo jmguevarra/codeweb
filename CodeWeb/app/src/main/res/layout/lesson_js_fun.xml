@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_js_fun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.codeweb.codeweb.LessonActivity.Js_Activity.JsFunActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/js_overview"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/eye"
+                android:onClick="gotoJsOverview"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/js_basic"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/basic_btn"
+                android:onClick="gotoJsBasic"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/js_overview"
+                android:layout_toStartOf="@+id/js_overview"
+                android:layout_marginEnd="20dp" />
+
+            <ImageButton
+                android:id="@+id/js_loop"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/loop_icon"
+                android:onClick="gotoJsLoop_Con"
+                android:layout_marginStart="20dp"
+                android:layout_alignTop="@+id/js_basic"
+                android:layout_toEndOf="@+id/js_overview" />
+
+            <ImageButton
+                android:id="@+id/js_function"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/functions"
+                android:onClick="gotoJsFunctions"
+                android:layout_below="@+id/js_loop"
+                android:layout_toStartOf="@+id/js_loop"
+                android:layout_marginTop="50dp" />
+
+            <ImageButton
+                android:id="@+id/js_objects"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/objects"
+                android:onClick="gotoJsObjects"
+                android:layout_below="@+id/js_function"
+                android:layout_toStartOf="@+id/js_function"
+                android:layout_marginEnd="20dp" />
+
+            <ImageButton
+                android:id="@+id/js_core"
+                android:layout_width="77dp"
+                android:scaleType="fitCenter"
+                android:layout_height="77dp"
+                android:background="@drawable/core_objects"
+                android:onClick="gotoJsCore"
+                android:layout_marginStart="20dp"
+                android:layout_alignTop="@+id/js_objects"
+                android:layout_toEndOf="@+id/js_function" />
+
+            <ImageButton
+                android:id="@+id/js_events"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/events"
+                android:onClick="gotoJsEvents"
+                android:layout_below="@+id/js_core"
+                android:layout_toStartOf="@+id/js_core"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:text="Overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/js_overview"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="The Basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_below="@+id/js_basic"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:text="ConLoops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/js_basic"
+                android:layout_alignStart="@+id/js_loop"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:text="Functions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/js_function"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="Objects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_below="@+id/js_objects"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:text="Core Objects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/js_core"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:text="Events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/js_events"
+                android:layout_marginBottom="20dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:layout_below="@+id/appbar"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/hintcolor"
+                android:layout_height="wrap_content"
+                android:id="@+id/lsn_code"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_below="@+id/lsn_lesson"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="5dp"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/tryBtn"
+                android:text="Let's Try"
+                android:onClick="gotoCodeEditor"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/textColor"
+                android:layout_below="@+id/lsn_code"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/hintcolor"
+                android:layout_height="wrap_content"
+                android:id="@+id/lsn_trivia"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/lsn_result"
+                android:layout_alignParentStart="true"
+                android:paddingStart="50dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="5dp"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/continueBtn"
+                android:text="Next"
+                android:textColor="@color/textColor"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/lsn_trivia"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+            <TextView
+                android:text="Result:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lsn_code"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_marginTop="32dp"
+                android:id="@+id/Result" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/lsn_result"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/tryBtn"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text=""
+                android:textSize="16sp"
+                android:id="@+id/lsn_lesson"
+                android:padding="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/videobtn"
+                android:text="Watch Video"
+                android:onClick="gotoVideoSite"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/textColor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:layout_below="@+id/lsn_trivia" />
+
+        </RelativeLayout>
+    </ScrollView>
+   <!-- <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_backbtn"
+        android:id="@+id/backbtn"
+        android:onClick="BackBtn" />-->
+
+    <!--<TextView
+        android:text="@string/html_lesson"
+        android:layout_width="200dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlename"
+        android:textSize="20dp"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="13dp"
+        android:layout_alignBottom="@+id/backbtn"
+        android:layout_toEndOf="@+id/backbtn"
+        android:layout_marginStart="8dp" />-->
+
+
+
+</RelativeLayout>

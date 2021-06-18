@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CodeWeb</string>
+    <string name="AboutApp"><b>CodeWeb</b> is an Application that you can able to learn lessons about scripting language that can be use to create webpage like HTML, CSS and Javascript</string>
+    <string name="tagline"><![CDATA[
+         You can Learn, Code, and Create your own webpage
+        ]]></string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="overview">Overview</string>
+    <string name="htmlbasics">HTML Basics</string>
+    <string name="challenges">Challenges</string>
+    <string name="html5">HTML5</string>
+    <string name="read_file">This app needs access to your file storage so that it can read video.</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="about_prof"><![CDATA[He Studied Bachelor of Science in Information Technology (BSIT) at Dalubhasaan ng Lungsod ng Lucena (formerly City College of Lucena).<br><br>
+     Mr. Mesiera excels in any programming language like Java, C, C#, Phyton, Visual Basic, and Turbo C. He is also a front-end and back-end Web Developer.]]>
+    </string>
+    <string name="html_fun">HTML Fun</string>
+    <string name="the_basic">The Basic</string>
+    <string name="beat_me">Beat Me!</string>
+    <string name="html_lesson">HTML Lesson</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="codeweb">CodeWeb</string>
+    <string name="title_activity_html_detail">HtmlDetailActivity</string>
+    <string name="title_activity_student_detail">StudentDetail</string>
+    <string name="went_wrong">Something went wrong</string>
+    <string name="scripts_error">Side Scripts Error</string>
+
+    <string name="menu_undo">Undo</string>
+    <string name="menu_redo">Redo</string>
+    <string name="menu_github">GitHub</string>
+    <string name="app_repo">https://github.com/mthli/Knife</string>
+</resources>

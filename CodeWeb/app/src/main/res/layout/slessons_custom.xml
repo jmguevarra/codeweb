@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="12dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="12dp"
+    android:background="@color/textColor"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Web Structure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/lsn_title" />
+
+    <TextView
+        android:text="Overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="12sp"
+        android:id="@+id/lsn_category"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/lsn_title"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/ic_html"
+        android:id="@+id/ic_courses"/>
+
+</RelativeLayout>

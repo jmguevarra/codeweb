@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_marginTop="120dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textColor"
+            android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width ="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tiFullname">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/hintcolor"
+                        android:ems="10"
+                        android:hint="Fullname"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/rounded_rect_white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColorHint="@color/hintcolor"
+                        android:id="@+id/etFullname" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_width ="match_parent"
+                    android:id="@+id/tiStud_ID">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters"
+                        android:textColor="@color/hintcolor"
+                        android:ems="10"
+                        android:hint="Student ID"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/rounded_rect_white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColorHint="@color/hintcolor"
+                        android:id="@+id/etStud_ID" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width ="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tiSection">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters"
+                        android:textColor="@color/hintcolor"
+                        android:ems="10"
+                        android:hint="Section"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/rounded_rect_white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColorHint="@color/hintcolor"
+                        android:id="@+id/etSection" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width ="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tiEmail">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/hintcolor"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/rounded_rect_white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColorHint="@color/hintcolor"
+                        android:id="@+id/etEmail" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_width ="match_parent"
+                    android:id="@+id/tiNumber">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/hintcolor"
+                        android:ems="10"
+                        android:hint="Phone Number"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/rounded_rect_white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColorHint="@color/hintcolor"
+                        android:id="@+id/etNumber" />
+                </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:text="Add Student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addbtn"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:layout_below="@+id/scrollview"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/user_icon"
+        android:layout_marginTop="5dp"
+        android:id="@+id/user_img"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

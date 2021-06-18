@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/ic_action_name"
+            android:title="My Profile" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Actions">
+            <menu>
+                <item
+                    android:id="@+id/nav_lesson"
+                    android:icon="@drawable/ic_lesson"
+                    android:title="Lessons" />
+                <item
+                    android:id="@+id/nav_excercises"
+                    android:icon="@drawable/ic_excer"
+                    android:title="Exercises" />
+                <item
+                    android:id="@+id/nav_videos"
+                    android:icon="@drawable/ic_vid"
+                    android:title="Videos" />
+                <item
+                    android:id="@+id/nav_quizzes"
+                    android:icon="@drawable/ic_quiz"
+                    android:title="Quizzes" />
+
+            </menu>
+        </item>
+    </group>
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_editor"
+                android:icon="@drawable/ic_edit"
+                android:title="CodeWeb Editor" />
+            <item
+                android:id="@+id/nav_feedbacks"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View Feedbacks" />
+        </menu>
+    </item>
+
+</menu>

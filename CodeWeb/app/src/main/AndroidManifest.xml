@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.codeweb.codeweb">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cw"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="@android:icon">
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Activity.AdminPanel"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.HtmlLesson.HtmlFunActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".LessonActivity.CssLesson.CssFunActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".LessonActivity.Js_Activity.JsFunActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".LessonActivity.HtmlLesson.HtmlLessonPanel"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.QuizActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Activity.SectionsCom.StudentList"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.SectionsCom.StudentDetail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.SectionsCom.StudentList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.SectionsCom.StudentList" />
+        </activity>
+        <activity
+            android:name=".User_Activity.MyProfile"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Students_Activity.Achievements" />
+        <activity
+            android:name=".Admin_Activity.AdminActions.Admin_Lessons"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.Admin_Videos"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.Admin_Activity.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.Admin_Quizzes"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.Admin_Excercises"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.ActionsCom.AddLesson"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminActions.Admin_Lessons"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.AdminActions.Admin_Lessons" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.ActionsCom.ViewLesson"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminActions.Admin_Lessons"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Admin_Activity.AdminActions.Admin_Lessons" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.Admin_MyProfile"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.Admin_Activity.AdminPanel" />
+        </activity>
+        <activity
+            android:name=".LessonActivity.VideoPanel"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.CodeEditor"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LessonActivity.QuestActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.QuizActivity1"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Activity.AdminActions.ActionsCom.ViewQuizDetailed"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminActions.Admin_Quizzes"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.Admin_Activity.AdminActions.Admin_Quizzes" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.ActionsCom.AddDel_Quiz"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminActions.Admin_Quizzes"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.Admin_Activity.AdminActions.Admin_Quizzes" />
+        </activity>
+        <activity
+            android:name=".LessonActivity.RunPanel"
+            android:launchMode="singleTop"
+            android:parentActivityName=".LessonActivity.CodeEditor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.LessonActivity.CodeEditor" />
+        </activity>
+        <activity
+            android:name=".Admin_Activity.AdminActions.ActionsCom.ViewExcerDetailed"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminActions.Admin_Excercises"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.Admin_Activity.AdminActions.Admin_Excercises" />
+        </activity>
+        <activity
+            android:name=".User_Activity.ProfileEdit"
+            android:launchMode="singleTop"
+            android:parentActivityName=".User_Activity.MyProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.User_Activity.MyProfile" />
+        </activity>
+        <activity
+            android:name=".User_Activity.SendFeedBacks"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LessonActivity.CssLesson.CssLessonPanel"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.CssLesson.CssDetailedLesson"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.CssLesson.CssDetailedLesson2"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.HtmlLesson.HtmlDetailedLesson"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.HtmlLesson.HtmlDetailedLesson2"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.Js_Activity.JsLessonPanel"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.Js_Activity.JsDetailedLesson"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity.Js_Activity.JsDetailedLesson2"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Activity.AdminActions.Feedbacks"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".Admin_Activity.AdminPanel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.codeweb.codeweb.Admin_Activity.AdminPanel" />
+        </activity>
+        <activity android:name=".Admin_Activity.AdminActions.ActionsCom.AddVideo"
+            android:launchMode="singleTop"></activity>
+    </application>
+
+</manifest>
