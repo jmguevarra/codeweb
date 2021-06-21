@@ -11,4 +11,3 @@
   - **HTML** - Markup that helps to build my application
   - **XML** - Setting and local data handler
   - **JSON** - Serves as my handler getting data from server
-  - 
