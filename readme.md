@@ -11,4 +11,4 @@
   - **HTML** - markup that helps to build my application
   - **CSS** - used in small styling
   - **XML** - setting and local data handler
-  - **JSON** - serves as my handler getting data from server
+  - **JSON** - served as my handler that serialized data from server to the application
